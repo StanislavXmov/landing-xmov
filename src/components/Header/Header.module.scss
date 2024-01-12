@@ -28,7 +28,18 @@
   touch-action: none;
 }
 
+.wednesdayBox {
+  width: 205px;
+  height: 222px;
+  touch-action: none;
+}
+
 .bg {
   background-image: url('../../../public/no_avatar.svg');
+  background-repeat: no-repeat;
+}
+
+.wednesdayBg {
+  background-image: url('../../../public/no_wednesday_avatar.svg');
   background-repeat: no-repeat;
 }
