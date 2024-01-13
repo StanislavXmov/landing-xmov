@@ -1,0 +1,17 @@
+.nav {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+@media (min-width: 1280px) {
+  .nav {
+    left: 0;
+  }
+}
+
+.button {
+  background: none;
+  border: none;
+  outline: none;
+}

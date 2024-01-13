@@ -1,0 +1,113 @@
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+
+import WorkIcon from '../assets/works_icon.svg?react';
+
+import styles from './Navigation.module.scss';
+import './style.scss';
+import { Link } from '@radix-ui/themes';
+
+const links = {
+  vr: [
+    {id: 0,title: 'Sandbox', url: 'https://xmov.fun/test_webxr/'},
+    {id: 1,title: 'Exhibition', url: 'https://xmov.fun/vr/exhibition/'},
+    {id: 2,title: 'Cubes', url: 'https://xmov.fun/vr/pointer/'},
+  ],
+  app3d: [
+    {id: 0,title: 'Sandbox', url: 'https://xmov.fun/games/sandbox_3d/'},
+    {id: 1,title: 'Exhibition', url: 'https://xmov.fun/games/exhibition/'},
+    {id: 2,title: 'Pointer', url: 'https://xmov.fun/games/pointer/'},
+  ],
+  web: [
+    {id: 0,title: 'Layout', url: 'https://xmov.fun/web/panning_layout/'},
+    {id: 1,title: 'Animation', url: 'https://xmov.fun/web/animation/'},
+    {id: 2,title: 'Gallery', url: 'https://xmov.fun/web/gallery/'},
+  ],
+}
+
+export const Navigation = () => {
+  const handler = (url: string) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null;
+  }
+  return (
+    <nav className={styles.nav}>
+      <DropdownMenu.Root>
+        <DropdownMenu.Trigger asChild>
+          <button className={styles.button} aria-label="Customise options">
+            <WorkIcon />
+          </button>
+        </DropdownMenu.Trigger>
+        <DropdownMenu.Portal>
+          <DropdownMenu.Content className="DropdownMenuContent" sideOffset={6} align='start' alignOffset={10} side='left'>
+          <DropdownMenu.Sub>
+            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+              VR
+            </DropdownMenu.SubTrigger>
+            <DropdownMenu.Portal>
+              <DropdownMenu.SubContent
+                className="DropdownMenuSubContent"
+                sideOffset={2}
+                alignOffset={-5}
+              >
+                {links.vr.map(l => (
+                  <DropdownMenu.Item 
+                    key={l.id} 
+                    className="DropdownMenuItem"
+                    onClick={() => handler(l.url)}
+                  >
+                    {l.title}
+                  </DropdownMenu.Item>
+                ))}
+              </DropdownMenu.SubContent>
+            </DropdownMenu.Portal>
+          </DropdownMenu.Sub>
+          <DropdownMenu.Sub>
+            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+              3D App
+            </DropdownMenu.SubTrigger>
+            <DropdownMenu.Portal>
+              <DropdownMenu.SubContent
+                className="DropdownMenuSubContent"
+                sideOffset={2}
+                alignOffset={-5}
+              >
+                {links.app3d.map(l => (
+                  <DropdownMenu.Item 
+                    key={l.id} 
+                    className="DropdownMenuItem"
+                    onClick={() => handler(l.url)}
+                  >
+                    {l.title}
+                  </DropdownMenu.Item>
+                ))}
+              </DropdownMenu.SubContent>
+            </DropdownMenu.Portal>
+          </DropdownMenu.Sub>
+          <DropdownMenu.Sub>
+            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+              Web
+            </DropdownMenu.SubTrigger>
+            <DropdownMenu.Portal>
+              <DropdownMenu.SubContent
+                className="DropdownMenuSubContent"
+                sideOffset={2}
+                alignOffset={-5}
+              >
+                {links.web.map(l => (
+                  <DropdownMenu.Item 
+                    key={l.id} 
+                    className="DropdownMenuItem"
+                    onClick={() => handler(l.url)}
+                  >
+                    {l.title}
+                  </DropdownMenu.Item>
+                ))}
+              </DropdownMenu.SubContent>
+            </DropdownMenu.Portal>
+          </DropdownMenu.Sub>
+          </DropdownMenu.Content>
+        </DropdownMenu.Portal>
+      </DropdownMenu.Root>
+    </nav>
+  )
+};
