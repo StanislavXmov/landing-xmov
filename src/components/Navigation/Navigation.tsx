@@ -38,7 +38,7 @@ export const Navigation = () => {
           </button>
         </DropdownMenu.Trigger>
         <DropdownMenu.Portal>
-          <DropdownMenu.Content className="DropdownMenuContent" sideOffset={6} align='start' alignOffset={10} side='left'>
+          <DropdownMenu.Content className="DropdownMenuContent" sideOffset={6} align='start' alignOffset={10} side='right'>
           <DropdownMenu.Sub>
             <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
               VR
