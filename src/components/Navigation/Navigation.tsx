@@ -16,6 +16,7 @@ const links = {
     {id: 0,title: 'Sandbox', url: 'https://xmov.fun/games/sandbox_3d/'},
     {id: 1,title: 'Exhibition', url: 'https://xmov.fun/games/exhibition/'},
     {id: 2,title: 'Pointer', url: 'https://xmov.fun/games/pointer/'},
+    {id: 2,title: '3DApp', url: 'https://xmov.fun/games/3DApp/'},
   ],
   web: [
     {id: 0,title: 'Layout', url: 'https://xmov.fun/web/panning_layout/'},
