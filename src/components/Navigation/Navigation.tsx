@@ -22,6 +22,7 @@ const links = {
     {id: 0,title: 'Layout', url: 'https://xmov.fun/web/panning_layout/'},
     {id: 1,title: 'Animation', url: 'https://xmov.fun/web/animation/'},
     {id: 2,title: 'Gallery', url: 'https://xmov.fun/web/gallery/'},
+    {id: 3,title: 'UI', url: 'https://xmov.fun/web/ui/'},
   ],
 }
 
