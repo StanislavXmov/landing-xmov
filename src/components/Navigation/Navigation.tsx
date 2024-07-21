@@ -17,6 +17,13 @@ const links = {
     {id: 1,title: 'Exhibition', url: 'https://xmov.fun/games/exhibition/'},
     {id: 2,title: 'Pointer', url: 'https://xmov.fun/games/pointer/'},
     {id: 3,title: '3DApp', url: 'https://xmov.fun/games/3DApp/'},
+    {id: 4,title: 'Game', url: 'https://xmov.fun/games/game/'},
+    {id: 5,title: 'FPV', url: 'https://xmov.fun/games/fpv/'},
+    {id: 6,title: 'Room', url: 'https://xmov.fun/games/room/'},
+    {id: 7,title: 'Runner', url: 'https://xmov.fun/godot/runner/'},
+    {id: 8,title: 'Scene', url: 'https://xmov.fun/web/scene/'},
+    {id: 9,title: 'Panelka', url: 'https://xmov.fun/web/panelka/'},
+    {id: 9,title: 'Walls', url: 'https://xmov.fun/web/walls/'},
   ],
   web: [
     {id: 0,title: 'Layout', url: 'https://xmov.fun/web/panning_layout/'},
@@ -25,6 +32,9 @@ const links = {
     {id: 2,title: 'Gallery', url: 'https://xmov.fun/web/gallery/'},
     {id: 3,title: 'UI', url: 'https://xmov.fun/web/ui/'},
     {id: 5,title: 'Vending Machine', url: 'https://xmov.fun/web/vending_machine/'},
+    {id: 6,title: 'Dating', url: 'https://xmov.fun/web/dating/'},
+    {id: 7,title: 'Pie', url: 'https://xmov.fun/web/pie/'},
+    {id: 8,title: 'Canvas', url: 'https://xmov.fun/web/canvas/'},
   ],
 }
 
