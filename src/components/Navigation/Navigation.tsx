@@ -35,6 +35,7 @@ const links = {
     {id: 6,title: 'Dating', url: 'https://xmov.fun/web/dating/'},
     {id: 7,title: 'Pie', url: 'https://xmov.fun/web/pie/'},
     {id: 8,title: 'Canvas', url: 'https://xmov.fun/web/canvas/'},
+    {id: 9,title: 'Tap', url: 'https://xmov.fun/games/tap/'},
   ],
 }
 
