@@ -24,6 +24,7 @@ const links = {
     {id: 8,title: 'Scene', url: 'https://xmov.fun/web/scene/'},
     {id: 9,title: 'Panelka', url: 'https://xmov.fun/web/panelka/'},
     {id: 9,title: 'Walls', url: 'https://xmov.fun/web/walls/'},
+    {id: 9,title: 'Coins', url: 'https://xmov.fun/games/coins/'},
   ],
   web: [
     {id: 0,title: 'Layout', url: 'https://xmov.fun/web/panning_layout/'},
